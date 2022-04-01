@@ -1,0 +1,166 @@
+footer {
+    padding-top: 4rem;
+    margin-top: -2rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: #040e3a;
+    ;
+
+
+    .contact {
+        margin-top: 2rem;
+
+        h1 {
+            color: #fff;
+        }
+
+
+        i {
+            color: #fff;
+            padding-right: .8rem;
+        }
+
+        img {
+            position: absolute;
+            top: -8.5rem;
+            left: -1rem;
+
+        }
+
+
+        span {
+            position: relative;
+            display: block;
+            color: white;
+            padding-bottom: 1.3rem;
+
+            mat-icon {
+                position: relative;
+                top: 5px;
+                right: 5px;
+            }
+        }
+
+    }
+}
+
+//   .contact img{
+//     margin-top: -4rem;
+//     width: 12rem;
+//     display: block;
+//   }
+
+
+
+//   .contact span{
+//     display: block;
+//     color: white;
+//     padding-bottom: 1.3rem;
+//   }
+
+//   .contact span i{
+//     padding-right: .8rem;
+//     color: white;
+//   }
+.links {
+
+    h2 {
+        color: white;
+        margin-bottom: 1.2rem;
+        position: relative;
+        left: 6px;
+    }
+
+    span {
+        display: block;
+        color: white;
+        padding-bottom: .8rem;
+
+        mat-icon {
+            position: relative;
+            top: 8px;
+            color: #0033a0;
+            ;
+
+        }
+
+    }
+}
+
+
+
+.services {
+
+    h2 {
+        color: white;
+        margin-bottom: 1.2rem;
+        position: relative;
+        left: 6px;
+
+    }
+
+    span {
+        display: block;
+        color: white;
+        padding-bottom: .8rem;
+
+        mat-icon {
+            position: relative;
+            top: 8px;
+            color: #0033a0;
+
+        }
+
+    }
+}
+
+
+
+
+.news {
+
+    h2 {
+        color: white;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        color: white;
+    }
+
+    span {
+        color: #0033a0;
+    }
+
+    .content {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    img {
+        width: 8rem;
+    }
+
+    .text {
+        margin-left: 1.1rem;
+        width: 10rem;
+    }
+
+}
+
+
+
+
+
+.copy {
+    display: flex;
+    justify-content: center;
+    background-color: #030925;
+    ;
+
+    label {
+        padding: 5px;
+        color: #fff;
+
+    }
+}

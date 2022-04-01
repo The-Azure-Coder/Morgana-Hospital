@@ -1,0 +1,164 @@
+<div class="nav">
+    <div class="nav-general">
+        <span class="logo"><img src="../assets/logos/Morgana-logo.png " alt=""></span>
+        <span [matMenuTriggerFor]="menu">Subsidiaries<mat-icon class="arrow-down">
+                keyboard_arrow_down</mat-icon></span>
+        <mat-menu class="subsid-menu" #menu="matMenu">
+            <div class="menu-content">
+                <a href="">
+                    <div class="menu-image">
+                        <img src="../assets/logos/school-logo.png" alt="">
+                        <h2>Morgana University</h2>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="menu-image">
+                        <img src="../assets/logos/mogana-clinic.png" alt="">
+                        <h2>Morgana Clinic</h2>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="menu-image">
+                        <img src="../assets/logos/morgana-news.png" alt="">
+                        <h2>Morgana News Feed</h2>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="menu-image">
+                        <img src="../assets/logos/morgana-hotel.png" alt="">
+                        <h2>Morgana hotel</h2>
+                    </div>
+                </a>
+            </div>
+        </mat-menu>
+        <span>Appointments</span>
+        <span>Contact Us</span>
+        <span [matMenuTriggerFor]="menu2">Doctor List<mat-icon class="arrow-down">
+                keyboard_arrow_down</mat-icon>
+        </span>
+        <mat-menu class="doclist-menu" #menu2="matMenu">
+            <div class="department-info">
+                <div class="surgery">
+                    <h2>Surgery</h2>
+                    <span>Dr Jacob Woo</span>
+                    <span>Dr Ray London</span>
+                    <span>Wi-Fi</span>
+                    <span>Even More Space</span>
+                    <span>Our Fares</span>
+                    <span>Our Planes</span>
+                    <span>New Routes</span>
+                    <span>Business Travel</span>
+                    <span>Military Customers</span>
+                </div>
+                <div class="radiology">
+                    <h2>Radiology</h2>
+                    <span>Bag Info</span>
+                    <span>Airport info</span>
+                    <span>International Travel</span>
+                    <span>Ground Transfer</span>
+                    <span>Accessibility Assistance</span>
+                    <span>Terminal 5 at JFK</span>
+                    <span>How to Check In</span>
+                    <span>TSA PreCheck</span>
+                </div>
+                <div class="pharmacology">
+                    <h2>Pharmacology</h2>
+                    <span>Traveling with Kids</span>
+                    <span>Traveling with Pets</span>
+                    <span>Group Travel</span>
+                </div>
+                <div class="pathology">
+                    <h2>Pathology</h2>
+                    <span>Our Promises</span>
+                    <span>Cancellation & Delays</span>
+                    <span>Travel Insurance</span>
+                </div>
+
+            </div>
+
+        </mat-menu>
+
+
+
+
+    </div>
+    <div class="nav-register">
+        <span [matMenuTriggerFor]="menu3"><img src="../assets/svgs/user.png" alt="login">Morgana</span>
+
+        <mat-menu class="register-menu" #menu3="matMenu">
+            <div class="register-details">
+                <h2>Sign up with Morgana</h2>
+                <p>Join to recieve Discounts, offers and much more</p>
+                <a href=""><span>Why join</span></a>
+                <a href=""><span>Morgana Forum</span></a>
+                <a href=""><span>Earning Points</span></a>
+            </div>
+            <div class="register-btn">
+                <button mat-button>Register</button>
+                <a href=""><span>Login<mat-icon>arrow_right</mat-icon></span></a>
+            </div>
+        </mat-menu>
+
+
+        <span><img class="kart" src="../assets/svgs/clip.png">My Chart</span>
+
+    </div>
+
+</div>
+<!-- <div class="headline">
+    <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" scrolldelay="100">
+
+        <p> <img src="../assets/svgs/ambulance.png" width="60" alt="">Welcome to our Morgana hospital where top notch
+            health is provideded at a cost affordable rate</p>
+    </marquee>
+</div> -->
+
+<div class="moto">
+    <div class="moto-heading">
+        <h1>Our specialty </h1>
+        <h2>is you</h2>
+
+    </div>
+    <div class="opening-hours">
+        <div class="opening-image">
+            <img src="../assets/svgs/clock2.png" alt="">
+        </div>
+        <div class="opening-content">
+            <span>Opening Hours</span>
+            <span class="bor">Mon - Sat 8am - 6am</span>
+        </div>
+    </div>
+
+    <div class="sign">
+        <div class="sign-image">
+            <img src="../assets/svgs/user2.png" alt="">
+        </div>
+        <div class="sign-content">
+            <span>Sign in/Sign up</span>
+            <span class="bor">Free Trial for first time</span>
+        </div>
+
+    </div>
+    <div class="contact">
+        <div class="contact-image">
+            <img src="../assets/svgs/phone.png" alt="">
+        </div>
+        <div class="contact-content">
+            <span>Call us Today</span>
+            <span class="bor">876-842-7851</span>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="subnav">
+    <div class="subnav-head">
+        <span class="hover-underline-animation">Home</span>
+        <span>About us</span>
+        <span>Department & Services</span>
+        <span>Our Staff</span>
+        <span>Make An Appointment</span>
+        <span>Latest News</span>
+    </div>
+</div>

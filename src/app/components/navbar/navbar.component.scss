@@ -1,0 +1,380 @@
+// Menus-starts
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+::ng-deep.mat-menu-panel {
+    max-width: none !important;
+}
+
+::ng-deep.subsid-menu {
+    margin-top: 1.9rem;
+    width: 90rem;
+    height: 20rem;
+    border-radius: 1px;
+
+    .menu-content {
+        display: flex;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            color: #0033a0;
+        }
+
+        .menu-image {
+            margin-right: 7rem;
+            margin-top: 1rem;
+            text-align: center;
+
+            h2 {
+
+                font-weight: 400;
+            }
+
+        }
+
+    }
+}
+
+::ng-deep.doclist-menu {
+    margin-top: 1.9rem;
+    width: 90rem;
+    height: 25rem;
+    border-radius: 1px;
+
+    .department-info {
+        display: flex;
+        margin-left: 15rem;
+
+
+        div {
+            margin-right: 6.5rem;
+
+        }
+
+        h2 {
+            padding-top: 2rem;
+            color: #0033a0;
+
+            svg {
+                position: relative;
+                top: 10px;
+            }
+
+        }
+
+        span {
+            display: block;
+            margin-bottom: .8rem;
+            color: #0033a0;
+            font-weight: 200;
+            font-size: 16px;
+        }
+    }
+
+    .menu-foot {
+        margin-left: 12rem;
+        border-top: 1px solid #d3d3d3;
+
+        span {
+
+            margin-right: 8rem;
+            font-size: 18px;
+            color: #0033a0;
+
+
+            svg {
+                position: relative;
+                top: 12px;
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+::ng-deep.register-menu {
+    margin-top: 1.7rem;
+    margin-left: 8rem;
+    height: 16rem;
+    width: 16rem;
+    padding: 20px;
+
+
+    .register-details {
+
+        h2 {
+            color: #00205b;
+            font-size: 400;
+
+        }
+
+        a {
+            color: #00205b;
+            text-decoration: none;
+            display: block;
+            margin-bottom: .6rem;
+        }
+
+    }
+
+    .register-btn {
+
+        button {
+            background-color: #0033a0;
+            color: #fff;
+            margin-right: .8rem;
+        }
+
+        a {
+            text-decoration: none;
+
+            mat-icon {
+                position: relative;
+                top: 8px;
+                right: 5px;
+            }
+
+        }
+    }
+
+}
+
+
+
+// Menu-Ends
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffd000;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+
+.nav {
+    background-color: #040e3a;
+    padding-top: 6px;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+
+    &-general {
+        margin-left: 12rem;
+        position: relative;
+
+        span {
+            position: relative;
+            margin-left: 25px;
+            font-size: 16px;
+            color: #fff;
+
+            img {
+                position: absolute;
+                top: -7rem;
+                left: -11rem;
+                // right: 14rem;
+            }
+
+            .arrow-down {
+                position: relative;
+                font-size: 18px;
+                top: 2px;
+                left: 3px;
+            }
+        }
+    }
+
+    &-register {
+        margin-left: 20rem;
+
+
+
+        span {
+            margin-right: 1.2rem;
+            font-size: 16px;
+            color: #fff;
+
+            img {
+                position: relative;
+                width: 28px;
+                top: 6px;
+                right: 6px;
+                padding-left: 8px;
+            }
+
+            .search {
+                width: 22px;
+                padding-left: 1.1rem;
+            }
+        }
+
+        // .kart {
+        //     color: #fff;
+        //     position: relative;
+        //     top: 6px;
+        //     right: 6px;
+        //     padding-left: 10px;
+
+        // }
+    }
+}
+
+// .headline {
+
+//     marquee {
+//         p {
+//             font-family: Georgia, 'Times New Roman', Times, serif;
+//             font-size: 23px;
+//             color: #0033a0;
+
+//             img {
+//                 position: relative;
+//                 top: 20px;
+//                 right: 7px
+//             }
+
+
+
+//         }
+
+//     }
+// }
+
+.moto {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    display: flex;
+
+    &-heading {
+        h1 {
+            font-family: 'Italianno', cursive;
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-family: 'Italianno', cursive;
+            font-size: 3rem;
+            margin-top: -10px;
+            margin-left: 8rem;
+        }
+    }
+
+    .opening-hours {
+        display: flex;
+        margin-left: 6rem;
+
+        .opening-image {
+
+
+            img {
+                width: 50px;
+
+            }
+        }
+
+        .opening-content {
+            margin-left: .9rem;
+
+            span {
+                display: block;
+                margin-top: .2rem;
+                margin-bottom: .2rem;
+            }
+
+            .bor {
+                border-top: 1px dotted black;
+                padding-top: 5px;
+            }
+        }
+    }
+
+    .sign {
+        display: flex;
+        margin-left: 6rem;
+
+        .sign-image {
+            img {
+                width: 50px;
+            }
+        }
+
+        .sign-content {
+            margin-left: .9rem;
+
+            span {
+                display: block;
+                margin-top: .2rem;
+                margin-bottom: .2rem;
+            }
+
+            .bor {
+                border-top: 1px dotted black;
+                padding-top: 5px;
+            }
+        }
+    }
+
+    .contact {
+        display: flex;
+        margin-left: 6rem;
+
+        .contact-image {
+            img {
+                width: 50px;
+            }
+        }
+
+        .contact-content {
+            margin-left: .9rem;
+
+            span {
+                display: block;
+                margin-top: .2rem;
+                margin-bottom: .2rem;
+            }
+
+            .bor {
+                border-top: 1px dotted black;
+                padding-top: 5px;
+            }
+        }
+
+
+    }
+
+}
+
+.subnav {
+    display: flex;
+    justify-content: center;
+
+    &-head {
+
+        span {
+            padding: 5px;
+            margin-left: 1.2rem;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #0033a0;
+            ;
+
+        }
+
+    }
+}
