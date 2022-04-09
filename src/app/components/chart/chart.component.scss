@@ -1,0 +1,162 @@
+.profile {
+    background-image: linear-gradient(135deg, transparent 0%, transparent 17%, rgba(87, 146, 234, 0.6) 17%, rgba(87, 146, 234, 0.6) 59%, transparent 59%, transparent 64%, rgba(34, 81, 222, 0.6) 64%, rgba(34, 81, 222, 0.6) 100%), linear-gradient(45deg, transparent 0%, transparent 2%, rgb(87, 146, 234) 2%, rgb(87, 146, 234) 46%, rgb(114, 178, 239) 46%, rgb(114, 178, 239) 54%, transparent 54%, transparent 63%, rgb(7, 48, 216) 63%, rgb(7, 48, 216) 100%), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+
+    &-background {
+
+        position: relative;
+        width: 100%;
+        height: 55vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+
+        // background-image: linear-gradient(328deg, rgba(29, 29, 29, 0.05) 0%, rgba(29, 29, 29, 0.05) 25%, rgba(226, 226, 226, 0.05) 25%, rgba(226, 226, 226, 0.05) 50%, rgba(21, 21, 21, 0.05) 50%, rgba(21, 21, 21, 0.05) 75%, rgba(216, 216, 216, 0.05) 75%, rgba(216, 216, 216, 0.05) 100%), linear-gradient(172deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 25%, rgba(108, 108, 108, 0.05) 25%, rgba(108, 108, 108, 0.05) 50%, rgba(21, 21, 21, 0.05) 50%, rgba(21, 21, 21, 0.05) 75%, rgba(236, 236, 236, 0.05) 75%, rgba(236, 236, 236, 0.05) 100%), linear-gradient(207deg, rgba(153, 153, 153, 0.05) 0%, rgba(153, 153, 153, 0.05) 25%, rgba(83, 83, 83, 0.05) 25%, rgba(83, 83, 83, 0.05) 50%, rgba(5, 5, 5, 0.05) 50%, rgba(5, 5, 5, 0.05) 75%, rgba(82, 82, 82, 0.05) 75%, rgba(82, 82, 82, 0.05) 100%), linear-gradient(297deg, rgba(26, 26, 26, 0.05) 0%, rgba(26, 26, 26, 0.05) 25%, rgba(223, 223, 223, 0.05) 25%, rgba(223, 223, 223, 0.05) 50%, rgba(232, 232, 232, 0.05) 50%, rgba(232, 232, 232, 0.05) 75%, rgba(153, 153, 153, 0.05) 75%, rgba(153, 153, 153, 0.05) 100%), linear-gradient(204deg, rgba(120, 120, 120, 0.05) 0%, rgba(120, 120, 120, 0.05) 25%, rgba(191, 191, 191, 0.05) 25%, rgba(191, 191, 191, 0.05) 50%, rgba(246, 246, 246, 0.05) 50%, rgba(246, 246, 246, 0.05) 75%, rgba(123, 123, 123, 0.05) 75%, rgba(123, 123, 123, 0.05) 100%), linear-gradient(90deg, rgb(32, 234, 255), rgb(37, 116, 255));
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.23);
+            /* Black see-through */
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+    }
+
+
+
+    .heading {
+
+        color: white;
+
+        h1 {
+            position: absolute;
+            margin-left: 14rem;
+            margin-top: 16rem;
+            font-size: 8rem;
+            font-family: "Italianno", cursive;
+        }
+
+        h2 {
+            position: absolute;
+            margin-top: 16rem;
+            margin-left: 58rem;
+            font-size: 8rem;
+            font-family: "Italianno", cursive;
+
+        }
+    }
+
+    .profileCard {
+        background-color: #fff;
+
+        position: relative;
+        top: -15rem;
+
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.118);
+        -webkit-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.118);
+        margin-left: 27rem;
+        width: fit-content;
+        padding: 30px;
+
+        .profileImg {
+            overflow: hidden;
+            text-align: center;
+
+            img {
+                border-radius: 50%;
+                width: 15rem;
+            }
+        }
+
+        .profile-details {
+            h2 {
+                text-align: center;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 24px;
+            }
+
+            .info {
+                margin-bottom: 1.1rem;
+
+                p {
+                    display: block;
+                    text-align: center;
+                    font-size: 14px;
+                    width: 25rem;
+
+
+                    color: #777;
+                }
+            }
+
+            button {
+                margin-top: .8rem;
+                margin-left: 9rem;
+                border: 1px solid #0077B5;
+                color: #0077B5;
+            }
+
+
+        }
+
+    }
+
+
+
+
+}
+
+.container {
+    max-width: 1200px;
+    position: relative;
+    top: -8rem;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    height: 9rem
+}
+
+.mat-form-field {
+    font-size: 10px;
+    width: 100%;
+}
+
+td,
+th {
+    width: 8%;
+    font-size: 12px;
+
+}
+
+
+.end-background {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+    h1 {
+        font-family: "Italianno", cursive;
+        font-size: 70px;
+
+    }
+
+    img {
+        width: 20rem;
+        height: 10rem;
+    }
+}
+
+.table-head {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+}

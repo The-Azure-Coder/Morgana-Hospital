@@ -1,0 +1,93 @@
+<h1 mat-dialog-title>Appoinment Update Form</h1>
+<div mat-dialog-content>
+    <form action="" [formGroup]="appointForm">
+        <div class="name">
+            <div class="form-field" [ngStyle]="{'padding-right':'2.8rem'}">
+                <mat-form-field appearance="outline">
+                    <mat-label>First Name</mat-label>
+                    <input type="text" formControlName="fname" name="fname" matInput placeholder="Placeholder">
+                    <mat-hint>Enter First Name</mat-hint>
+                </mat-form-field>
+            </div>
+            <div class="form-field">
+                <mat-form-field appearance="outline">
+                    <mat-label>Last Name</mat-label>
+                    <input type="text" formControlName="lname" name="lanme" matInput placeholder="Placeholder">
+                    <mat-hint>Enter Last Name</mat-hint>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="name">
+            <div class="form-field" [ngStyle]="{'padding-right':'2.8rem'}">
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input type="email" formControlName="email" name="email" matInput placeholder="Placeholder">
+                    <mat-hint>Enter First Name</mat-hint>
+                </mat-form-field>
+            </div>
+            <div class="form-field">
+                <mat-form-field appearance="outline">
+                    <mat-label>Mobile Number</mat-label>
+                    <input type="text" formControlName="mobile" name="mobile" matInput placeholder="Placeholder">
+                    <mat-hint>(876)-xxx-xxxx</mat-hint>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="form-field2">
+            <mat-form-field appearance="outline">
+                <mat-label>Choose a date</mat-label>
+                <input formControlName="dob" name="dob" matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="form-field2">
+
+            <mat-form-field appearance="outline">
+                <mat-label>Address</mat-label>
+                <input type="text" name="address" formControlName="address" matInput placeholder="Placeholder">
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+        </div>
+
+        <div class="form-field2">
+            <mat-form-field appearance="outline">
+                <mat-label>Gender</mat-label>
+                <mat-select formControlName="gender" name="gender">
+                    <mat-option *ngFor="let gender of genders" [value]="gender">
+                        {{gender}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+        </div>
+
+        <div class="form-field2">
+            <mat-form-field appearance="outline">
+                <mat-label>Choose Department</mat-label>
+                <mat-select formControlName="department" name="department">
+                    <mat-option *ngFor="let type of departTypes" [value]="type">
+                        {{type}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+        </div>
+
+        <div class="form-field2">
+            <mat-form-field appearance="outline">
+                <mat-label>Message For Doctor</mat-label>
+                <textarea name="message" formControlName="message" matInput></textarea>
+            </mat-form-field>
+        </div>
+
+
+        <div mat-dialog-action [align]="'center'">
+            <button (click)="updateAppointment()" color="white" [ngStyle]="{'background-color':'blue','color':'white'}"
+                mat-button>Update
+                Appointment</button>
+            <!-- <button mat-raised-button color="warn" mat-dialog-close>close</button> -->
+
+        </div>
+    </form>
+</div>

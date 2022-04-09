@@ -20,6 +20,21 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { DepartmentComponent } from './components/department/department.component';
+import { StaffComponent } from './components/staff/staff.component';
+import { NewsComponent } from './components/news/news.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { AppointmentComponent } from './components/appointment/appointment.component';
+import { MatSelectModule } from '@angular/material/select';
+import { ChartComponent } from './components/chart/chart.component';
+import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { EditDialogComponent } from './components/edit-dialog/edit-dialog.component';
+
 
 
 
@@ -31,6 +46,17 @@ import { HomeComponent } from './components/home/home.component';
     NavbarComponent,
     FooterComponent,
     HomeComponent,
+    AboutComponent,
+    DepartmentComponent,
+    StaffComponent,
+    NewsComponent,
+    ContactComponent,
+    AppointmentComponent,
+    ChartComponent,
+    RegisterComponent,
+    LoginComponent,
+    EditDialogComponent,
+
 
 
   ],
@@ -51,7 +77,14 @@ import { HomeComponent } from './components/home/home.component';
     MatTabsModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSelectModule,
+    MatPaginatorModule,
+    MatTableModule,
+    MatSortModule,
+    MatDialogModule,
+    MatMenuModule,
+
 
   ],
   providers: [],

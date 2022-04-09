@@ -1,0 +1,141 @@
+<div class="staff">
+    <div class="staff-background" [style.background-image]="staffBackground">
+        <div class="overlay"></div>
+        <div class="staff-head">
+            <h2>Meet Our Team</h2>
+        </div>
+    </div>
+
+    <div class="heading">
+        <div class="content">
+            <h2>Chief of Each Department</h2>
+            <p>These are individuals at our hospital who have climbed their way to the ranks and attain the #1 positions
+                in
+                their departments</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="staff-chief">
+    <div class="card" *ngFor="let info of staffInfo">
+        <div class="image">
+            <img src="{{info.img}}" alt="">
+
+
+        </div>
+        <div class="content">
+            <h2>{{info.name}}</h2>
+            <span>{{info.title}}</span>
+            <p>{{info.des}}</p>
+            <div class="appoint-btn">
+                <button mat-button>Book Appointment</button>
+                <div class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="collection">
+    <div class="content">
+        <h2>Our Collection</h2>
+        <p> A collection photos of our doctors, nurse and other staff interacting with patients</p>
+    </div>
+
+</div>
+
+<section class="gallery-section clippy">
+    <div class="gallery">
+        <figure class="pic01 two-span-row">
+            <div class="imgWrap">
+                <img src="../assets/images/staff1.jpg" alt="">
+            </div>
+        </figure>
+        <figure class="pic02">
+            <div class="imgWrap">
+                <img src="../assets/images/staff2.jpg" alt="">
+
+            </div>
+
+        </figure>
+        <figure class="pic03 two-span-column">
+            <div class="imgWrap">
+                <img src="../assets/images/staff3.jpg" alt="">
+
+            </div>
+
+        </figure>
+        <figure class="pic04">
+            <div class="imgWrap">
+                <img src="../assets/images/staff4.jpg" alt="">
+
+            </div>
+
+        </figure>
+        <figure class="pic05">
+            <div class="imgWrap">
+                <img src="../assets/images/staff5.jpg" alt="">
+
+            </div>
+        </figure>
+        <figure class="pic06">
+            <div class="imgWrap">
+                <img src="../assets/images/staff6.jpg" alt="">
+
+            </div>
+
+        </figure>
+        <figure class="pic07 two-span-column">
+            <div class="imgWrap">
+                <img src="../assets/images/staff7.jpg" alt="">
+
+            </div>
+
+        </figure>
+        <figure class="pic08">
+            <div class="imgWrap">
+                <img src="../assets/images/staff8.jpg" alt="">
+
+            </div>
+
+        </figure>
+        <figure class="pic11">
+            <div class="imgWrap">
+                <img src="../assets/images/staff9.jpg" alt="">
+
+            </div>
+
+        </figure>
+        <figure class="pic01 two-span-column">
+            <div class="imgWrap">
+                <img src="../assets/images/staff10.jpg" alt="">
+            </div>
+
+        </figure>
+        <figure class="pic01 ">
+            <div class="imgWrap">
+                <img src="../assets/images/staff11.jpg" alt="">
+            </div>
+
+        </figure>
+
+    </div>
+</section>
+<div class="end-background">
+    <div class="message-image">
+        <img src="../assets/svgs/sticker.png" alt="">
+    </div>
+
+    <div class="message">
+        <h1>Now You've been acquainted</h1>
+
+    </div>
+</div>

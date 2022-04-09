@@ -35,6 +35,13 @@ $morgana-hospital-theme: mat.define-light-theme((color: (primary: $morgana-hospi
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&family=Italianno&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
 html,
 body {
   height: 100%;

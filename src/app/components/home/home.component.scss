@@ -1,8 +1,114 @@
 .welcome {
     margin-top: 1.5rem;
+    position: relative;
 
-    video {
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.356);
+        /* Black see-through */
         width: 100%;
         height: 100%;
+        overflow: hidden;
+
+    }
+
+    video {
+        width: 100% !important;
+        height: 100% !important;
+        // transform: scale(1.02);
+        display: block;
+
+    }
+
+    &-msg {
+        position: absolute;
+        color: white;
+        bottom: 15rem;
+        left: 30rem;
+
+        h2 {
+            font-size: 4rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+            span {
+
+                color: #5e90fc;
+
+            }
+        }
+
+        h3 {
+            font-size: 4rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-top: 1.8rem;
+            margin-left: 4rem;
+
+            span {
+
+                color: #5e90fc;
+
+            }
+        }
+
+        p {
+            padding-top: 2rem;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 44px;
+            letter-spacing: 2px;
+            font-size: 2rem;
+            margin-left: 4rem;
+
+        }
+
+        .appoint {
+            background-color: #5e90fc;
+            ;
+            margin-left: 4rem;
+            padding: 5px;
+            width: 10rem;
+
+            margin-right: 1.1rem;
+
+        }
+
+        .learn {
+            border: 1px solid #5e90fc;
+            ;
+            padding: 5px;
+            color: #5e90fc;
+            ;
+            width: 8rem;
+
+        }
+    }
+}
+
+.hours {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    background-color: #5e90fc;
+    height: 3rem;
+
+    span {
+        display: block;
+        border-top: 2px solid white;
+        padding-top: 10px;
+        color: white;
+        font-size: 1.5rem;
+
+    }
+
+    i {
+        color: white;
+        font-size: 3rem;
+    }
+
+    label {
+        color: white;
+        font-size: 1.5rem;
+
     }
 }

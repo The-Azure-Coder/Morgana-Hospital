@@ -1,6 +1,6 @@
 footer {
     padding-top: 4rem;
-    margin-top: -2rem;
+    // margin-top: -2rem;
     display: flex;
     justify-content: space-around;
     background-color: #040e3a;
@@ -79,8 +79,7 @@ footer {
         mat-icon {
             position: relative;
             top: 8px;
-            color: #0033a0;
-            ;
+            color: #5e90fc;
 
         }
 
@@ -107,7 +106,7 @@ footer {
         mat-icon {
             position: relative;
             top: 8px;
-            color: #0033a0;
+            color: #5e90fc;
 
         }
 
@@ -129,7 +128,7 @@ footer {
     }
 
     span {
-        color: #0033a0;
+        color: #5e90fc;
     }
 
     .content {

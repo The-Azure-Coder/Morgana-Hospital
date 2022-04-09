@@ -1,0 +1,228 @@
+.contact {
+
+    &-background {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.418);
+        /* Black see-through */
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 0;
+    }
+
+    &-head {
+
+
+        position: absolute;
+        margin-left: 25rem;
+        padding-top: 12rem;
+
+
+        h2 {
+            text-align: center;
+            line-height: 25px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 4rem;
+            width: 35rem;
+            color: white;
+
+        }
+
+        P {
+            padding-top: 1.5rem;
+            position: relative;
+            right: 5rem;
+            font-family: "Italianno", cursive;
+            font-size: 50px;
+            color: white;
+        }
+    }
+
+}
+
+
+.message-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 10rem;
+    width: fit-content;
+
+    .content {
+        padding: 25px;
+        color: #777;
+
+        h1 {
+            color: #777;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        span {
+            display: block;
+            margin-bottom: .8rem;
+
+
+            mat-icon {
+                position: relative;
+                top: 5px;
+                right: 5px
+            }
+        }
+
+        i {
+            padding-top: .6rem;
+            padding-right: 1.5rem;
+            font-size: 18px;
+        }
+    }
+
+    .message-image {
+        overflow: hidden;
+
+        img {
+            display: block;
+            width: 20rem;
+            height: 16rem;
+        }
+    }
+
+    .message-form {
+        display: flex;
+        margin-top: 2rem;
+
+        .detail {
+            box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.118);
+            -webkit-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.118);
+            -moz-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.118);
+            margin-right: 6rem;
+            position: relative;
+            background-color: white;
+            top: -4rem;
+            z-index: 2;
+        }
+
+
+        .contact-form {
+
+            h2 {
+                color: rgb(168, 160, 160);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 24px;
+                margin-bottom: 2rem;
+
+            }
+
+            form {
+
+                div {
+                    margin-bottom: 2rem;
+                }
+
+                input {
+                    padding-bottom: 15px;
+                    outline: none;
+                    width: 16rem;
+                    border: none;
+                    margin-right: 2rem;
+                    border-bottom: 1px solid rgb(153, 153, 153);
+
+
+                }
+
+                .subject {
+                    width: 34.4rem;
+                }
+
+                label {
+                    display: block;
+                    color: #777;
+                    margin-bottom: .4rem;
+                }
+
+                textarea {
+                    background-color: rgb(248, 246, 246);
+                    border: none;
+                    outline: none;
+                }
+            }
+
+            button {
+                margin-top: 1.9rem;
+                background-color: #0033a0;
+                color: white;
+                display: block;
+
+                mat-icon {
+                    font-size: 20px;
+                    position: relative;
+                    left: 3px;
+                    top: 2px;
+                }
+            }
+
+
+        }
+
+
+    }
+}
+
+.newsletter {
+    display: flex;
+    width: fit-content;
+    height: 12rem;
+    background-color: rgb(46, 46, 46);
+    color: rgb(232, 229, 229);
+    margin-bottom: 2rem;
+    margin-left: 10rem;
+
+    .content {
+        padding: 12px;
+        width: 19rem;
+        justify-content: center;
+        display: flex;
+
+
+        h2 {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 21px;
+        }
+
+
+        p {
+            text-align: center;
+            width: 15rem;
+        }
+
+        input {
+
+            margin-left: 1rem;
+            padding: 8px;
+            width: 12rem;
+        }
+    }
+
+    .map {
+        overflow: hidden;
+
+        img {
+            width: 41rem;
+            height: 20rem;
+            display: block;
+        }
+    }
+}

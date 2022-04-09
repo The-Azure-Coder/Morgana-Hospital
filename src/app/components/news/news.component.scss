@@ -1,0 +1,176 @@
+.paper {
+    background-image: linear-gradient(78deg, transparent 0%, transparent 36%, rgba(17, 17, 17, 0.02) 36%, rgba(17, 17, 17, 0.02) 56%, transparent 56%, transparent 100%), linear-gradient(30deg, transparent 0%, transparent 2%, rgba(105, 105, 105, 0.02) 2%, rgba(105, 105, 105, 0.02) 75%, transparent 75%, transparent 100%), linear-gradient(206deg, transparent 0%, transparent 68%, rgba(3, 3, 3, 0.02) 68%, rgba(3, 3, 3, 0.02) 99%, transparent 99%, transparent 100%), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-position: center;
+    margin-bottom: 2rem;
+
+    .heading {
+        display: flex;
+        justify-content: center;
+
+
+        h2 {
+            position: absolute;
+            top: 8rem;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 55px;
+            color: white;
+
+
+        }
+    }
+
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(5, 105, 187, 0.384);
+        /* Black see-through */
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 0;
+    }
+
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    h2 {
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 35px;
+        margin-bottom: 2rem;
+
+    }
+
+    P {
+        font-size: 16px;
+    }
+
+}
+
+.news {
+    // display: flex;
+    position: relative;
+
+
+
+
+
+    &-heading {
+        position: absolute;
+
+        left: 2rem;
+
+
+        h1 {}
+
+        p {
+            width: 12rem;
+        }
+
+    }
+
+
+    &-card {
+        display: flex;
+        justify-content: center;
+        // padding-left: 10rem;
+        margin-bottom: 2rem;
+
+
+        .card-date {
+            margin-right: 4rem;
+
+
+
+            span {
+                display: block;
+            }
+        }
+
+        .card-content {
+            display: flex;
+            margin-right: 3rem;
+            border-bottom: 1px solid rgba(119, 119, 119, 0.37);
+            padding: 10px;
+
+
+            .headline-img {
+                margin-right: 1.1rem;
+
+                img {
+                    width: 20rem;
+                    height: 10rem;
+                }
+            }
+        }
+
+        .headline {
+
+            h2 {
+                width: 28rem;
+
+                span {
+                    color: #0033a0;
+                    font-size: 16px;
+                }
+            }
+
+            p {
+                width: 22rem;
+            }
+
+        }
+
+
+
+        .card-btn {
+            margin-top: 4rem;
+
+            button {
+
+                border: 1px solid rgb(14, 133, 245);
+
+            }
+        }
+    }
+}
+
+.hideContent {
+    display: none;
+}
+
+.limitTextHeight {
+    height: 20px;
+    overflow: hidden;
+}
+
+.show-btn {
+
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+
+    button {
+        background-color: #0b48ca;
+        color: white;
+        width: 10rem;
+        height: 2.5rem;
+    }
+}

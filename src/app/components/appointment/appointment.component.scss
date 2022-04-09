@@ -1,0 +1,141 @@
+.magic {
+    background-image: radial-gradient(circle at top right, rgb(49, 157, 235) 0%, rgb(49, 157, 235) 13%, rgb(76, 166, 234) 13%, rgb(76, 166, 234) 23%, rgb(103, 176, 232) 23%, rgb(103, 176, 232) 33%, rgb(130, 185, 231) 33%, rgb(130, 185, 231) 46%, rgb(159, 193, 238) 46%, rgb(159, 193, 238) 48%, rgb(183, 209, 240) 48%, rgb(183, 209, 240) 63%, rgb(187, 196, 255) 63%, rgb(187, 196, 255) 83%, rgb(200, 216, 238) 83%, rgb(200, 216, 238) 100%);
+}
+
+.appoint {
+    &-background {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-attachment: fixed;
+        background-position: center;
+        margin-bottom: 2rem;
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.291);
+            /* Black see-through */
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .heading {
+
+
+
+
+            h2 {
+                position: absolute;
+                top: 10rem;
+                // text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 50px;
+                color: white;
+                margin-left: 6rem;
+
+
+            }
+
+            p {
+                position: absolute;
+                color: white;
+                top: 11rem;
+                line-height: 60px;
+                width: 30rem;
+                left: 50rem;
+                font-size: 5rem;
+                font-family: "Italianno", cursive;
+            }
+        }
+    }
+}
+
+.appointment-form {
+    position: relative;
+    top: -6rem;
+    padding: 20px;
+    margin-left: 6rem;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.118);
+    -webkit-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.118);
+    -moz-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.118);
+    width: fit-content;
+    background-color: white;
+    border-radius: .8rem;
+
+
+
+    form {
+
+        .name {
+            display: flex;
+
+            .form-field {
+
+                margin-bottom: 1.2rem;
+
+                mat-form-field {
+                    width: 15rem;
+                }
+            }
+        }
+
+        .form-field2 {
+
+            mat-form-field {
+                width: 33rem;
+            }
+
+            textarea {
+                height: 4rem;
+            }
+
+        }
+
+        button {
+            background-color: #0c54ef;
+            color: white;
+            padding: .3rem;
+            width: 200px;
+            margin-left: 10rem;
+            margin-bottom: .6rem;
+        }
+
+    }
+}
+
+.flex-con {
+    display: flex;
+
+    .discount {
+        text-align: center;
+        color: #fff;
+        margin-left: 8rem;
+        margin-top: 6rem;
+
+        img {
+            width: 15rem;
+            margin-bottom: 1.1rem;
+        }
+
+        h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;
+
+        }
+
+        P {
+            font-size: 18px;
+        }
+
+        button {
+            border: 1px solid #fff;
+        }
+    }
+}

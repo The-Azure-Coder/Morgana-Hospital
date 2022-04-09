@@ -1,0 +1,38 @@
+[
+    {
+        "img": "../assets/images/surgery2.jpg",
+        "name": "Dr Talcia Harris",
+        "title": "Chief of Surgery",
+        "des": "Morgana Department of Surgery combines excellence in clinical care, biomedical research, and education. We have been advancing knowledge in surgical treatments since 1849. Our experts deliver a compassionate experience for patients, biomedical discoveries that further the field of medicine, and best-in-class training for the next generation of surgeon leaders."
+    },
+    {
+        "img": "../assets/images/chief-dental.jpg",
+        "name": "Dr Lucy Morgan",
+        "title": "Chief of Dentistry",
+        "des": "My lab focuses on identifying and translating regenerative materials and technologies to reestablish dental, oral, and craniofacial (DOC) tissue health. We use both in vitro and in vivo pre-clinical animal models to gain further insight into the potential clinical safety and efficacy of the developed biomaterials and overall regenerative strategies."
+    },
+    {
+        "img": "../assets/images/gyn.jpg",
+        "name": "Dr William Jackson",
+        "title": "Chief of Gyancology",
+        "des": "As a global leader in studying the effects of diseases and problems unique to women, we are taking on challenges across the continuum of care. We're pioneering new reproductive approaches; developing technologies that address complications from birth-related injuries; and helping women cope with complex diseases throughout their pregnancies. "
+    },
+    {
+        "img": "../assets/images/cancer2.jpg",
+        "name": "Dr Andrea Green",
+        "title": "Cancer Dept Chief",
+        "des": "We pride ourselves on being on the leading edge of research, and are dedicated to providing our patients with the very best care and treatment. Our faculty are involved in bench to bedside research, from basic laboratory experiments to conducting experimental clinical treatments."
+    },
+    {
+        "img": "../assets/images/nurse.jpg",
+        "name": "Dr Alyssia Read",
+        "title": "Head Nurse",
+        "des": "Our vision is to “create and maintain a culture of excellent professional practice by a workforce that is highly motivated and committed to providing safe, efficient, effective compassionate care regardless of social, political or religious circumstances”"
+    },
+    {
+        "img": "../assets/images/radio.jpg",
+        "name": "Dr Henry Brown",
+        "title": "Chief of Radiology",
+        "des": "Our vision is to “create and maintain a culture of excellent professional practice by a workforce that is highly motivated and committed to providing safe, efficient, effective compassionate care regardless of social, political or religious circumstances”"
+    }
+]

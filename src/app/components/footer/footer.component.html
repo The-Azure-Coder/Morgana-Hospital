@@ -5,7 +5,7 @@
             <mat-icon>location_on</mat-icon>123 havendale cresent
         </span>
         <span>
-            <mat-icon>mail</mat-icon>Morgana High@gmail.com
+            <mat-icon>mail</mat-icon>MorganaHospital@gmail.com
         </span>
         <span>
             <mat-icon>phone</mat-icon>(876) 842-7815
@@ -26,52 +26,21 @@
 
     <div class="links">
         <h2>Useful links</h2>
-        <span>
-            <mat-icon>arrow_right</mat-icon> About the School
-        </span>
-        <span>
-            <mat-icon>arrow_right</mat-icon>Morgana University
-        </span>
-        <span>
-            <mat-icon>arrow_right</mat-icon>Club Activities
-        </span>
-        <span>
-            <mat-icon>arrow_right</mat-icon>Client User Account
-        </span>
-        <span>
-            <mat-icon>arrow_right</mat-icon>Our support Forum
-        </span>
-        <span>
-            <mat-icon>arrow_right</mat-icon>Our Help Center
+        <span *ngFor="let link of links">
+            <mat-icon>arrow_right</mat-icon>{{link}}
         </span>
     </div>
     <div class="services">
         <h2>Services</h2>
-        <span>
-            <mat-icon>arrow_right</mat-icon>To notch education
-        </span>
-        <span>
-            <mat-icon>arrow_right</mat-icon>Operation Theater
-        </span>
-        <span>
-            <mat-icon>arrow_right</mat-icon>Swiming lessons
-        </span>
-        <span>
-            <mat-icon>arrow_right</mat-icon>Counciling
-        </span>
-        <span>
-            <mat-icon>arrow_right</mat-icon>Our support Forum
-        </span>
-        <span>
-            <mat-icon>arrow_right</mat-icon>Pharmacy Service
+        <span *ngFor="let service of services">
+            <mat-icon>arrow_right</mat-icon>{{service}}
         </span>
     </div>
     <div class="news">
         <h2>Latest news</h2>
         <div class="content">
             <div class="img">
-                <img src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80"
-                    alt="">
+                <img src="../assets/images/surgery.jpg" alt="">
             </div>
             <div class="text">
                 <p>Lorem ipsum dolor sit amet consectetur</p>
@@ -80,8 +49,7 @@
         </div>
         <div class="content">
             <div class="img">
-                <img src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80"
-                    alt="">
+                <img src="../assets/images/debate.jpg" alt="">
             </div>
             <div class="text">
                 <p>Lorem ipsum dolor sit amet consectetur</p>
@@ -90,8 +58,7 @@
         </div>
         <div class="content">
             <div class="img">
-                <img src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80 "
-                    alt="">
+                <img src="../assets/images/docs.jpg" alt="">
             </div>
             <div class="text">
                 <p>Lorem ipsum dolor sit amet consectetur</p>

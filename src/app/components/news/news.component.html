@@ -1,0 +1,133 @@
+<div class="paper">
+    <div class="background" [style.background-image]="newsBackground">
+        <div class="overlay"></div>
+        <div class="heading">
+            <h2>Morgana News</h2>
+        </div>
+    </div>
+    <div class="heading">
+        <div>
+            <h2>Latest News</h2>
+            <p>Where experts and and undiscovered voices can share their writing on any topic</p>
+        </div>
+
+    </div>
+    <div class="news">
+        <div class=" news-card">
+            <div class="card-date">
+                <h2>8 mins Read</h2>
+                <small>08 Dec 2021</small>
+
+            </div>
+
+            <div class="card-content">
+                <div class="headline-img">
+                    <img src="../assets/images/surgery.jpg" alt="">
+                </div>
+                <div class="headline">
+                    <h2>Surgery perform on The president.<br><span>No complications reporeted so far</span></h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non similique omnis laborum porro
+                        maxime
+                        autem
+                        quae quos magnam molestias? Nemo necessitatibus consequuntur beatae minus pe</p>
+                </div>
+
+            </div>
+
+            <div class="card-btn">
+                <button mat-button>Read More</button>
+            </div>
+
+
+        </div>
+
+        <div class=" news-card">
+            <div class="card-date">
+                <h2>12 mins Read</h2>
+                <small>08 Dec 2021</small>
+
+            </div>
+
+            <div class="card-content">
+                <div class="headline-img">
+                    <img src="../assets/images/debate.jpg" alt="">
+                </div>
+                <div class="headline">
+                    <h2>Doctors on Blast.<br><span>Doctor fired for a simple mistake</span></h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non similique omnis laborum porro
+                        maxime
+                        autem
+                        quae quos magnam molestias? Nemo necessitatibus consequuntur beatae minus pe</p>
+                </div>
+
+            </div>
+
+            <div class="card-btn">
+                <button mat-button>Read More</button>
+            </div>
+
+        </div>
+
+        <div class=" news-card">
+            <div class="card-date">
+                <h2>13 mins Read</h2>
+                <small>08 Dec 2021</small>
+
+            </div>
+
+            <div class="card-content">
+                <div class="headline-img">
+                    <img src="../assets/images/docs.jpg" alt="">
+                </div>
+                <div class="headline">
+                    <h2>looking towards the future.<br><span>New Batch of doctors as arrived</span></h2>
+
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non similique omnis laborum porro
+                        maxime
+                        autem
+                        quae quos magnam molestias? Nemo necessitatibus consequuntur beatae minus pe</p>
+                </div>
+
+            </div>
+
+            <div class="card-btn">
+                <button mat-button>Read More</button>
+            </div>
+
+        </div>
+
+        <div class=" news-card" [ngClass]="{'hideContent': isShowMore}">
+            <div class="card-date">
+                <h2>20 mins Read</h2>
+                <small>08 Dec 2021</small>
+
+            </div>
+
+            <div class="card-content">
+                <div class="headline-img">
+                    <img src="../assets/images/pediatric.jpg" alt="">
+                </div>
+                <div class="headline">
+                    <h2>Pedatriatian week<br><span>Let us take the time to appreciate our Doctors</span></h2>
+
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non similique omnis laborum porro
+                        maxime
+                        autem
+                        quae quos magnam molestias? Nemo necessitatibus consequuntur beatae minus pe</p>
+                </div>
+
+            </div>
+
+            <div class="card-btn">
+                <button mat-button>Read More</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="show-btn">
+        <div>
+            <button mat-button type="button" (click)="showMore()"> {{ isShowMore ? 'Show More': 'Show Less' }}</button>
+        </div>
+    </div>

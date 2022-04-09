@@ -1,0 +1,26 @@
+{
+  "appointmentList": [
+    {
+      "fname": "ty",
+      "lname": "Morgan",
+      "email": "jrackfinn@gmail.com",
+      "mobile": "842-7815",
+      "dob": "2001-08-27T05:00:00.000Z",
+      "address": "12 landsdale Ave",
+      "gender": "Male",
+      "department": "Cancer Treatment",
+      "message": "Check up",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
