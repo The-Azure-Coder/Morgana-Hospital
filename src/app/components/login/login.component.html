@@ -8,18 +8,7 @@
             </div>
 
         </div>
-        <!-- 
-    <div class="error-msg" *ngIf="(f['user'].touched || submitted)">
-        <mat-error class="mat-error" *ngIf="f['user'].errors?.['required']">
-            <mat-icon class="error-icon">error</mat-icon> Choose a Gmail address
-        </mat-error>
-        <mat-error *ngIf="f['user'].errors?.['minlength'] || f['user'].errors?.['maxlength']">
-            <mat-icon class="error-icon">error</mat-icon>Username
-            must be between 6 to 40 chracters
-            long
-        </mat-error>
 
-    </div> -->
         <form class="form-reactive" [formGroup]="loginForm" action="" (ngSubmit)="logIn()">
             <h1>Login Form</h1>
             <mat-form-field appearance="outline">

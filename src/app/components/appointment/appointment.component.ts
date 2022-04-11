@@ -11,7 +11,6 @@ export class AppointmentComponent implements OnInit {
   genders = ["Male", "Female"]
   departTypes = ['Surgery', 'Gynecology', 'Cancer Treatment', 'Dentistry', 'Radiology', 'Nursing']
   appointBackground: string = 'url( https://stormotion.io/blog/content/images/2017/07/doctor-appointment-app-cover-1.jpg)'
-  // formbackground: string = 'url( https://cdn0.scrvt.com/a534b4b72e47031e7c1755abc55cf709/cc015cd51d0ba9cb/525bc8e6b9af/v/04ebfa781643/Health-Care-Management-Header.jpg)'
 
 
   appointForm = new FormGroup({

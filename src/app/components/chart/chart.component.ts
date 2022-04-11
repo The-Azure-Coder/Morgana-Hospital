@@ -37,7 +37,6 @@ export class ChartComponent implements OnInit {
   }
 
   getAllAppointment() {
-    // this.api.getAppointment()
     this.api.getAppointment().subscribe({
       next: (res) => {
         console.log(res)
