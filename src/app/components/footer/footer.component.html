@@ -1,74 +1,76 @@
-<footer>
-    <div class="contact">
-        <span><img src="../assets/logos/Morgana-logo.png" alt=""></span>
-        <span>
-            <mat-icon>location_on</mat-icon>123 havendale cresent
-        </span>
-        <span>
-            <mat-icon>mail</mat-icon>MorganaHospital@gmail.com
-        </span>
-        <span>
-            <mat-icon>phone</mat-icon>(876) 842-7815
-        </span>
-        <i>
-            <mat-icon>facebook</mat-icon>
-        </i>
-        <i>
-            <mat-icon>email</mat-icon>
-        </i>
-        <i>
-            <mat-icon>next_week</mat-icon>
-        </i>
-        <i>
-            <mat-icon>access_alarm</mat-icon>
-        </i>
-    </div>
-
-    <div class="links">
-        <h2>Useful links</h2>
-        <span *ngFor="let link of links">
-            <mat-icon>arrow_right</mat-icon>{{link}}
-        </span>
-    </div>
-    <div class="services">
-        <h2>Services</h2>
-        <span *ngFor="let service of services">
-            <mat-icon>arrow_right</mat-icon>{{service}}
-        </span>
-    </div>
-    <div class="news">
-        <h2>Latest news</h2>
-        <div class="content">
-            <div class="img">
-                <img src="../assets/images/surgery.jpg" alt="">
-            </div>
-            <div class="text">
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-                <span>25 feb 2021</span>
-            </div>
-        </div>
-        <div class="content">
-            <div class="img">
-                <img src="../assets/images/debate.jpg" alt="">
-            </div>
-            <div class="text">
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-                <span>25 feb 2021</span>
-            </div>
-        </div>
-        <div class="content">
-            <div class="img">
-                <img src="../assets/images/docs.jpg" alt="">
-            </div>
-            <div class="text">
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-                <span>25 feb 2021</span>
-            </div>
+<div class="foot-hide" [ngClass]="footerRoute('/register') || footerRoute('/login') ? 'hide' : 'show'">
+    <footer>
+        <div class="contact">
+            <span><img src="../assets/logos/Morgana-logo.png" alt=""></span>
+            <span>
+                <mat-icon>location_on</mat-icon>123 havendale cresent
+            </span>
+            <span>
+                <mat-icon>mail</mat-icon>MorganaHospital@gmail.com
+            </span>
+            <span>
+                <mat-icon>phone</mat-icon>(876) 842-7815
+            </span>
+            <i>
+                <mat-icon>facebook</mat-icon>
+            </i>
+            <i>
+                <mat-icon>email</mat-icon>
+            </i>
+            <i>
+                <mat-icon>next_week</mat-icon>
+            </i>
+            <i>
+                <mat-icon>access_alarm</mat-icon>
+            </i>
         </div>
 
+        <div class="links">
+            <h2>Useful links</h2>
+            <span *ngFor="let link of links">
+                <mat-icon>arrow_right</mat-icon>{{link}}
+            </span>
+        </div>
+        <div class="services">
+            <h2>Services</h2>
+            <span *ngFor="let service of services">
+                <mat-icon>arrow_right</mat-icon>{{service}}
+            </span>
+        </div>
+        <div class="news">
+            <h2>Latest news</h2>
+            <div class="content">
+                <div class="img">
+                    <img src="../assets/images/surgery.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                    <span>25 feb 2021</span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="img">
+                    <img src="../assets/images/debate.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                    <span>25 feb 2021</span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="img">
+                    <img src="../assets/images/docs.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                    <span>25 feb 2021</span>
+                </div>
+            </div>
 
+
+        </div>
+    </footer>
+    <div class="copy">
+        <label for="">©Copyright 2021 | all rights reserved</label>
     </div>
-</footer>
-<div class="copy">
-    <label for="">©Copyright 2021 | all rights reserved</label>
 </div>

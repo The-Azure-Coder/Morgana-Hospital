@@ -10,6 +10,7 @@ import { LoginComponent } from './components/login/login.component';
 import { NewsComponent } from './components/news/news.component';
 import { RegisterComponent } from './components/register/register.component';
 import { StaffComponent } from './components/staff/staff.component';
+import { HasLoginGuard } from './has-login.guard';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,8 +19,8 @@ const routes: Routes = [
   { path: 'staff', component: StaffComponent },
   { path: 'news', component: NewsComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'appoint', component: AppointmentComponent },
-  { path: 'chart', component: ChartComponent },
+  { path: 'appoint', component: AppointmentComponent, canActivate: [HasLoginGuard] },
+  { path: 'chart', component: ChartComponent, canActivate: [HasLoginGuard] },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent }
 ];

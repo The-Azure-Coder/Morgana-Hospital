@@ -1,136 +1,143 @@
-<div class="nav">
-    <div class="nav-general">
-        <span class="logo"><img src="../assets/logos/Morgana-logo.png " alt=""></span>
-        <span [matMenuTriggerFor]="menu">Subsidiaries<mat-icon class="arrow-down">
-                keyboard_arrow_down</mat-icon></span>
-        <mat-menu class="subsid-menu" #menu="matMenu">
-            <div class="menu-content">
-                <a href="">
-                    <div class="menu-image">
-                        <img src="../assets/logos/school-logo.png" alt="">
-                        <h2>Morgana University</h2>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="menu-image">
-                        <img src="../assets/logos/mogana-clinic.png" alt="">
-                        <h2>Morgana Clinic</h2>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="menu-image">
-                        <img src="../assets/logos/morgana-news.png" alt="">
-                        <h2>Morgana News Feed</h2>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="menu-image">
-                        <img src="../assets/logos/morgana-hotel.png" alt="">
-                        <h2>Morgana hotel</h2>
-                    </div>
-                </a>
-            </div>
-        </mat-menu>
-        <span>Appointments</span>
-        <span [routerLink]="['/contact']">Contact Us</span>
-        <span [matMenuTriggerFor]="menu2">Doctor List<mat-icon class="arrow-down">
-                keyboard_arrow_down</mat-icon>
-        </span>
-        <mat-menu class="doclist-menu" #menu2="matMenu">
-            <div class="department-info">
-                <div class="surgery">
-                    <h2>Surgery</h2>
-                    <span *ngFor="let doc1 of docList1">{{doc1}}</span>
+<div class="hide-foot" [ngClass]="footerRoute('/register') || footerRoute('/login') ? 'hide' : 'show'">
+    <div class="nav">
+        <div class="nav-general">
+            <span class="logo"><img src="../assets/logos/Morgana-logo.png " alt=""></span>
+            <span [matMenuTriggerFor]="menu">Subsidiaries<mat-icon class="arrow-down">
+                    keyboard_arrow_down</mat-icon></span>
+            <mat-menu class="subsid-menu" #menu="matMenu">
+                <div class="menu-content">
+                    <a href="">
+                        <div class="menu-image">
+                            <img src="../assets/logos/school-logo.png" alt="">
+                            <h2>Morgana University</h2>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="menu-image">
+                            <img src="../assets/logos/mogana-clinic.png" alt="">
+                            <h2>Morgana Clinic</h2>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="menu-image">
+                            <img src="../assets/logos/morgana-news.png" alt="">
+                            <h2>Morgana News Feed</h2>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="menu-image">
+                            <img src="../assets/logos/morgana-hotel.png" alt="">
+                            <h2>Morgana hotel</h2>
+                        </div>
+                    </a>
                 </div>
-                <div class="radiology">
-                    <h2>Radiology</h2>
-                    <span *ngFor="let doc2 of docList2">{{doc2}}</span>
-                </div>
-                <div class="pharmacology">
-                    <h2>Pharmacology</h2>
-                    <span *ngFor="let doc3 of docList3">{{doc3}}</span>
-                </div>
-                <div class="pathology">
-                    <h2>Pathology</h2>
-                    <span *ngFor="let doc4 of docList4">{{doc4}}</span>
+            </mat-menu>
+            <span>Appointments</span>
+            <span [routerLink]="['/contact']">Contact Us</span>
+            <span [matMenuTriggerFor]="menu2">Doctor List<mat-icon class="arrow-down">
+                    keyboard_arrow_down</mat-icon>
+            </span>
+            <mat-menu class="doclist-menu" #menu2="matMenu">
+                <div class="department-info">
+                    <div class="surgery">
+                        <h2>Surgery</h2>
+                        <span *ngFor="let doc1 of docList1">{{doc1}}</span>
+                    </div>
+                    <div class="radiology">
+                        <h2>Radiology</h2>
+                        <span *ngFor="let doc2 of docList2">{{doc2}}</span>
+                    </div>
+                    <div class="pharmacology">
+                        <h2>Pharmacology</h2>
+                        <span *ngFor="let doc3 of docList3">{{doc3}}</span>
+                    </div>
+                    <div class="pathology">
+                        <h2>Pathology</h2>
+                        <span *ngFor="let doc4 of docList4">{{doc4}}</span>
+
+                    </div>
 
                 </div>
 
+            </mat-menu>
+
+
+        </div>
+        <div class="nav-register">
+            <span [matMenuTriggerFor]="menu3"><img src="../assets/svgs/user.png" alt="login">Morgana</span>
+
+            <mat-menu class="register-menu" #menu3="matMenu">
+                <div class="register-details">
+                    <h2>Sign up with Morgana</h2>
+                    <p>Join to recieve Discounts, offers and much more</p>
+                    <a><span>Why join</span></a>
+                    <a><span>Morgana Forum</span></a>
+                    <a><span>Earning Points</span></a>
+                </div>
+                <div class="register-btn">
+                    <button [routerLink]="['/register']" mat-button>Register</button>
+
+                    <a *ngIf="!authenticated" [routerLink]="['/login']"><span>Login<mat-icon>arrow_right</mat-icon>
+                        </span></a>
+                    <span *ngIf="authenticated">
+                        <a [ngStyle]="{'cursor': 'pointer'}" (click)="logOut()"><span>Log Out</span></a>
+                    </span>
+                </div>
+            </mat-menu>
+
+
+            <span [routerLink]="['/chart']"><img class="kart" src="../assets/svgs/clip.png">My Chart</span>
+
+        </div>
+
+    </div>
+
+    <div class="moto">
+        <div class="moto-heading">
+            <h1>Our specialty </h1>
+            <h2>is you</h2>
+
+        </div>
+        <div class="opening-hours">
+            <div class="opening-image">
+                <img src="../assets/svgs/clock2.png" alt="">
+            </div>
+            <div class="opening-content">
+                <span>Opening Hours</span>
+                <span class="bor">Mon - Sat 8am - 6am</span>
+            </div>
+        </div>
+
+        <div class="sign">
+            <div class="sign-image">
+                <img src="../assets/svgs/user2.png" alt="">
+            </div>
+            <div [routerLink]="['/register']" class="sign-content">
+                <span>Sign in/Sign up</span>
+                <span class="bor">Free Trial for first time</span>
             </div>
 
-        </mat-menu>
-
-
-    </div>
-    <div class="nav-register">
-        <span [matMenuTriggerFor]="menu3"><img src="../assets/svgs/user.png" alt="login">Morgana</span>
-
-        <mat-menu class="register-menu" #menu3="matMenu">
-            <div class="register-details">
-                <h2>Sign up with Morgana</h2>
-                <p>Join to recieve Discounts, offers and much more</p>
-                <a><span>Why join</span></a>
-                <a><span>Morgana Forum</span></a>
-                <a><span>Earning Points</span></a>
+        </div>
+        <div class="contact">
+            <div class="contact-image">
+                <img src="../assets/svgs/phone.png" alt="">
             </div>
-            <div class="register-btn">
-                <button [routerLink]="['/register']" mat-button>Register</button>
-                <a [routerLink]="['/login']"><span>Login<mat-icon>arrow_right</mat-icon></span></a>
+            <div class="contact-content">
+                <span>Call us Today</span>
+                <span class="bor">876-842-7851</span>
             </div>
-        </mat-menu>
-
-
-        <span [routerLink]="['/chart']"><img class="kart" src="../assets/svgs/clip.png">My Chart</span>
-
-    </div>
-
-</div>
-
-<div class="moto">
-    <div class="moto-heading">
-        <h1>Our specialty </h1>
-        <h2>is you</h2>
-
-    </div>
-    <div class="opening-hours">
-        <div class="opening-image">
-            <img src="../assets/svgs/clock2.png" alt="">
-        </div>
-        <div class="opening-content">
-            <span>Opening Hours</span>
-            <span class="bor">Mon - Sat 8am - 6am</span>
         </div>
     </div>
 
-    <div class="sign">
-        <div class="sign-image">
-            <img src="../assets/svgs/user2.png" alt="">
-        </div>
-        <div [routerLink]="['/register']" class="sign-content">
-            <span>Sign in/Sign up</span>
-            <span class="bor">Free Trial for first time</span>
-        </div>
 
-    </div>
-    <div class="contact">
-        <div class="contact-image">
-            <img src="../assets/svgs/phone.png" alt="">
+    <div class="subnav">
+        <div class="subnav-head">
+            <span [routerLink]="['/']" class="hover-underline-animation">Home</span>
+            <span [routerLink]="['/about']" class="hover-underline-animation">About us</span>
+            <span [routerLink]="['/department']" class="hover-underline-animation">Department & Services</span>
+            <span [routerLink]="['/staff']" class="hover-underline-animation">Our Staff</span>
+            <span [routerLink]="['/appoint']" class="hover-underline-animation">Make An Appointment</span>
+            <span [routerLink]="['/news']" class="hover-underline-animation">Latest News</span>
         </div>
-        <div class="contact-content">
-            <span>Call us Today</span>
-            <span class="bor">876-842-7851</span>
-        </div>
-    </div>
-</div>
-
-
-<div class="subnav">
-    <div class="subnav-head">
-        <span [routerLink]="['/']" class="hover-underline-animation">Home</span>
-        <span [routerLink]="['/about']" class="hover-underline-animation">About us</span>
-        <span [routerLink]="['/department']" class="hover-underline-animation">Department & Services</span>
-        <span [routerLink]="['/staff']" class="hover-underline-animation">Our Staff</span>
-        <span [routerLink]="['/appoint']" class="hover-underline-animation">Make An Appointment</span>
-        <span [routerLink]="['/news']" class="hover-underline-animation">Latest News</span>
     </div>
 </div>

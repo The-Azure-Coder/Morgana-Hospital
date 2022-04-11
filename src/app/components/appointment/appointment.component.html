@@ -17,7 +17,7 @@
 
         <div class="flex-con">
             <div class="appointment-form">
-                <form action="" [formGroup]="appointForm">
+                <form action="" [formGroup]="appointForm" (ngSubmit)="onSubmit()">
                     <div class="name">
                         <div class="form-field" [ngStyle]="{'padding-right':'2.8rem'}">
                             <mat-form-field appearance="outline">
@@ -25,6 +25,10 @@
                                 <input type="text" formControlName="fname" name="fname" matInput
                                     placeholder="Placeholder">
                                 <mat-hint>Enter First Name</mat-hint>
+                                <mat-error
+                                    *ngIf="appointForm.get('fname')?.hasError('required') && appointForm.get('fname')?.touched|| submitted">
+                                    First Name Required</mat-error>
+
                             </mat-form-field>
                         </div>
                         <div class="form-field">
@@ -33,6 +37,9 @@
                                 <input type="text" formControlName="lname" name="lanme" matInput
                                     placeholder="Placeholder">
                                 <mat-hint>Enter Last Name</mat-hint>
+                                <mat-error
+                                    *ngIf="appointForm.get('lname')?.hasError('required') && appointForm.get('lname')?.touched|| submitted">
+                                    First Name Required</mat-error>
                             </mat-form-field>
                         </div>
                     </div>
@@ -43,6 +50,13 @@
                                 <input type="email" formControlName="email" name="email" matInput
                                     placeholder="Placeholder">
                                 <mat-hint>Enter First Name</mat-hint>
+                                <mat-error *ngIf=" appointForm.get('email')?.touched ||submitted">
+                                    <mat-error *ngIf="appointForm.get('email')?.hasError('required')">
+                                        Please Enter your Email Address</mat-error>
+                                    <mat-error
+                                        *ngIf="appointForm.get('email')?.hasError('email') && appointForm.get('email')?.touched">
+                                        Invalid Email Address</mat-error>
+                                </mat-error>
                             </mat-form-field>
                         </div>
                         <div class="form-field">
@@ -51,6 +65,12 @@
                                 <input type="text" formControlName="mobile" name="mobile" matInput
                                     placeholder="Placeholder">
                                 <mat-hint>(876)-xxx-xxxx</mat-hint>
+                                <mat-error *ngIf="appointForm.get('mobile')?.touched || submitted">
+                                    <mat-error *ngIf="appointForm.get('mobile')?.hasError('required')">
+                                        Mobile numberrequired</mat-error>
+                                    <mat-error *ngIf="appointForm.get('mobile')?.hasError('minlength')">
+                                        Must be atleast 10 characters long</mat-error>
+                                </mat-error>
                             </mat-form-field>
                         </div>
                     </div>
@@ -60,6 +80,10 @@
                             <input formControlName="dob" name="dob" matInput [matDatepicker]="picker">
                             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                             <mat-datepicker #picker></mat-datepicker>
+                            <mat-error
+                                *ngIf="appointForm.get('dob')?.hasError('required') && appointForm.get('dob')?.touched|| submitted">
+                                Date of
+                                Birth required</mat-error>
                         </mat-form-field>
                     </div>
                     <div class="form-field2">
@@ -69,6 +93,11 @@
                             <input type="text" name="address" formControlName="address" matInput
                                 placeholder="Placeholder">
                             <mat-hint>Hint</mat-hint>
+
+                            <mat-error
+                                *ngIf="appointForm.get('address')?.hasError('required') && appointForm.get('address')?.touched|| submitted">
+                                Date of
+                                Birth required</mat-error>
                         </mat-form-field>
                     </div>
 
@@ -80,6 +109,10 @@
                                     {{gender}}
                                 </mat-option>
                             </mat-select>
+                            <mat-error
+                                *ngIf="appointForm.get('gender')?.hasError('required') && appointForm.get('gender')?.touched|| submitted">
+                                Date of
+                                Birth required</mat-error>
                         </mat-form-field>
 
                     </div>
@@ -92,6 +125,10 @@
                                     {{type}}
                                 </mat-option>
                             </mat-select>
+                            <mat-error
+                                *ngIf="appointForm.get('department')?.hasError('required') && appointForm.get('department')?.touched|| submitted">
+                                Date of
+                                Birth required</mat-error>
                         </mat-form-field>
 
                     </div>
@@ -100,6 +137,10 @@
                         <mat-form-field appearance="outline">
                             <mat-label>Message For Doctor</mat-label>
                             <textarea name="message" formControlName="message" matInput></textarea>
+                            <mat-error
+                                *ngIf="appointForm.get('message')?.hasError('required') && appointForm.get('message')?.touched|| submitted">
+                                Date of
+                                Birth required</mat-error>
                         </mat-form-field>
                     </div>
 
@@ -109,8 +150,8 @@
             <div class="discount">
                 <img src="../assets/svgs/hospital.png" alt="">
                 <h2>Thank you for Choosing Morgana</h2>
-                <p>Sign up Now to get a 10% Discount on Appointment</p>
-                <button [routerLink]="['/register']" mat-button>Join Us</button>
+                <p>Join us Now to get a 10% Discount on Appointment</p>
+                <button mat-button>Membership</button>
             </div>
 
         </div>

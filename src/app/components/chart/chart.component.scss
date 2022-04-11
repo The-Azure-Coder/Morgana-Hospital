@@ -32,19 +32,10 @@
 
         h1 {
             position: absolute;
-            margin-left: 14rem;
+            margin-left: 47rem;
             margin-top: 16rem;
             font-size: 8rem;
             font-family: "Italianno", cursive;
-        }
-
-        h2 {
-            position: absolute;
-            margin-top: 16rem;
-            margin-left: 58rem;
-            font-size: 8rem;
-            font-family: "Italianno", cursive;
-
         }
     }
 
@@ -52,14 +43,15 @@
         background-color: #fff;
 
         position: relative;
-        top: -15rem;
+        top: -14rem;
 
         display: flex;
         flex-direction: column;
         box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.118);
         -webkit-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.118);
-        margin-left: 27rem;
+        margin-left: 4rem;
         width: fit-content;
+        border-radius: .9rem;
         padding: 30px;
 
         .profileImg {
@@ -123,7 +115,7 @@ table {
 }
 
 .mat-form-field {
-    font-size: 10px;
+    font-size: 2px;
     width: 100%;
 }
 
@@ -131,7 +123,7 @@ td,
 th {
     width: 8%;
     font-size: 12px;
-
+    // font-family: 'Times New Roman', Times, serif
 }
 
 
@@ -159,4 +151,10 @@ th {
     color: #fff;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 35px;
+}
+
+.mat-header-cell {
+    // color: #437bf5;
+    // font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
 }

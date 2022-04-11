@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import Validation from 'custom.validator';
 
 
@@ -23,10 +25,25 @@ export class RegisterComponent implements OnInit {
   )
 
   countries = ['Jamaica', 'Cuba', 'Hati', 'Trinidad'];
-  constructor() { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   onSubmit() {
     this.submitted = true;
+  }
+
+  signUp() {
+    this.http.post<any>("http://localhost:3000/signUp", this.registerForm.value)
+      .subscribe(res => {
+        if (this.registerForm.valid) {
+          alert("Signup Successfull");
+          this.registerForm.reset();
+          this.router.navigate(['/login'])
+        } else {
+          alert('Input Inavlid')
+        }
+      }, err => {
+        alert("Something Went Wrong")
+      })
   }
 
   ngOnInit(): void {

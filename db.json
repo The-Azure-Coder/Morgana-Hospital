@@ -1,23 +1,29 @@
 {
-  "appointmentList": [
+  "appointmentList": [],
+  "signUp": [
     {
-      "fname": "ty",
-      "lname": "Morgan",
+      "username": "tyrese27",
       "email": "jrackfinn@gmail.com",
-      "mobile": "842-7815",
-      "dob": "2001-08-27T05:00:00.000Z",
-      "address": "12 landsdale Ave",
-      "gender": "Male",
-      "department": "Cancer Treatment",
-      "message": "Check up",
-      "id": 1
-    }
-  ],
-  "comments": [
+      "dob": "2022-04-15T05:00:00.000Z",
+      "password": "lovehurts27",
+      "cpassword": "lovehurts27",
+      "id": 5
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "username": "",
+      "email": "",
+      "dob": "",
+      "password": "",
+      "cpassword": "",
+      "id": 6
+    },
+    {
+      "username": "tyrese25",
+      "email": "jrackfinn@gmail.com",
+      "dob": "2022-04-14T05:00:00.000Z",
+      "password": "tyresemorgan",
+      "cpassword": "tyresemorgan",
+      "id": 7
     }
   ],
   "profile": {

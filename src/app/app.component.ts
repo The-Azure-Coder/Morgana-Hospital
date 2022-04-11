@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'morgana-hospital';
+
+  public clickedEvent!: any;
+
+  childEventClicked(event: any) {
+    this.clickedEvent = event;
+  }
 }

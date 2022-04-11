@@ -34,6 +34,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { EditDialogComponent } from './components/edit-dialog/edit-dialog.component';
+import { MatBadgeModule } from '@angular/material/badge';
 
 
 
@@ -84,6 +85,7 @@ import { EditDialogComponent } from './components/edit-dialog/edit-dialog.compon
     MatSortModule,
     MatDialogModule,
     MatMenuModule,
+    MatBadgeModule
 
 
   ],

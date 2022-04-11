@@ -125,6 +125,7 @@
 
         a {
             text-decoration: none;
+            color: #0033a0;
 
             mat-icon {
                 position: relative;
@@ -319,8 +320,8 @@
                 display: block;
                 margin-top: .2rem;
                 margin-bottom: .2rem;
-
             }
+
 
             .bor {
                 border-top: 1px dotted black;
@@ -352,4 +353,12 @@
         }
 
     }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }

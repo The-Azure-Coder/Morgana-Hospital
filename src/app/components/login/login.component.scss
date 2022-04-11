@@ -4,8 +4,13 @@
 
 // }
 
+.background {
+    overflow: hidden;
+    height: 100%;
+}
+
 .form {
-    border-radius: .6rem;
+    // border-radius: .6rem;
     width: 10rem;
     height: 35rem;
     display: flex;
@@ -21,7 +26,7 @@
         overflow: hidden;
         width: 30rem;
         height: 85vh;
-        border-radius: .6rem;
+        // border-radius: .6rem;
         overflow: hidden;
         background-size: cover;
         background-repeat: no-repeat;
@@ -55,14 +60,17 @@
         h2 {
 
             font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 2.5rem;
+            font-size: 2rem;
+            cursor: pointer;
+            text-align: center;
         }
 
         p {
             position: relative;
-            font-size: 3.5rem;
+            text-align: center;
+            font-size: 2.2rem;
             top: 10px;
-            font-family: "Italianno", cursive;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
     }
